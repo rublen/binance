@@ -1,0 +1,16 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  host: localhost
+  username: binance-user
+  password: ''
+
+
+development:
+  <<: *default
+  database: binance_development
+
+test: &test
+  <<: *default
+  database: binance_test
