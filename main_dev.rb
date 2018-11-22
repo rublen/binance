@@ -1,11 +1,16 @@
 require_relative 'environments/development'
 require 'pp'
 
-client = BinanceClient.new(Credential.last)
-hystorical_trades = HistoricalTrades.new(client, 'ETHBTC', 5).response_hash
+item = Credential.last
+# Credential.all.each do |item|
+  client = BinanceClient.new(item)
+  hystorical_trades = HistoricalTrades.new(client, 'ETHBTC', 5).response_hash
 
-pp (hystorical_trades)
+  pp (hystorical_trades)
 
-Application.log('Hello!')
+  Application.log("Hello! #{item}")
+# end
 
 # p Credential.all
+
+

@@ -35,9 +35,9 @@ class HistoricalTrades
 
     t[:date] = time(trade['time'])
     t[:symbol] = @symbol
-    t[:type] = 'DEPO/WITH/BUY/SELL/COMISSION'
+    t[:type] = trade['isBuyerMaker'] ? 'Maker' : 'Taker'
     t[:price] = trade['price']
-    t[:quantity] = 10
+    t[:quantity] = trade['qty']
 
     t
   end

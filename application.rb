@@ -8,7 +8,7 @@ class Application
 
   include Singleton
 
-  @logger = Logger.new(File.expand_path('log/app.log', __dir__))
+  @logger = Logger.new(File.expand_path('log/app.log', __dir__), 10, 1024000)
 
   attr_reader :db
 
