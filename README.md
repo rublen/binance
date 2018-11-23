@@ -1,3 +1,3 @@
-ruby main.rb -- runs programme
+ruby main.rb -- runs the programme
 
-rspec spec/test1_spec.rb -- runs test
+rspec spec/test1_spec.rb -- runs the test
