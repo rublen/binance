@@ -1,5 +1,4 @@
 require_relative '../application'
-require_relative 'app_logger'
 
 $environment = 'test'
 

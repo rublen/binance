@@ -25,8 +25,8 @@ class Application
     Pathname.new(File.expand_path('..', __FILE__))
   end
 
-  def self.log(data)
-    @logger.info(data)
+  def self.log(level, data)
+    @logger.public_send(level, data)
   end
 
   private

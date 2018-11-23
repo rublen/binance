@@ -5,8 +5,8 @@ class BinanceClient
 
   def initialize(credential)
     @credential_id = credential.id
-    @api_key = credential.key
-    @api_secret = credential.secret
+    @api_key = credential.api_key
+    @api_secret = credential.api_secret
     @connection = Faraday.new(url: BASE_ENDPOINT)
   end
 end

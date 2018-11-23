@@ -20,13 +20,18 @@ class HistoricalTrades
     end
   end
 
-  def response_hash
-    response = JSON.parse(call_to_api.body)
-    hash = { credential_id: @client.credential_id, trades: [], positions:[] }
-    response.each { |trade| hash[:trades] << trade_info(trade) }
-    hash
+  def raw_response
+    response = call_to_api
+    response_body = JSON.parse(response.body)
+    Application.log(:error, "401 Unauthorized: #{response_body}") if response.status == 401
+    response_body
   end
 
+  def response_hash
+    hash = { credential_id: @client.credential_id, trades: [], positions:[] }
+    raw_response.each { |trade| hash[:trades] << trade_info(trade) }
+    hash
+  end
 
   private
 
