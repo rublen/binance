@@ -1,7 +1,7 @@
 class BinanceClient
   BASE_ENDPOINT = 'https://api.binance.com/'
 
-  attr_reader :credential_id, :connection, :api_key
+  attr_reader :credential_id, :connection, :api_key, :api_secret
 
   def initialize(credential)
     @credential_id = credential.id
