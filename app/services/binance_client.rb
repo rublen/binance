@@ -1,3 +1,5 @@
+require 'faraday'
+
 class BinanceClient
   BASE_ENDPOINT = 'https://api.binance.com/'
 

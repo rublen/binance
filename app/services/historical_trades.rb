@@ -1,6 +1,3 @@
-require 'faraday'
-require 'json'
-
 class HistoricalTrades
 
   def initialize(client, symbol_string, limit=nil, fromId=nil)
@@ -14,9 +11,9 @@ class HistoricalTrades
     @client.connection.get do |request|
       request.url 'api/v1/historicalTrades'
       request.headers["X-MBX-APIKEY"] = @client.api_key
-      request.params['symbol'] = @symbol
-      request.params['limit'] = @limit if @limit
-      request.params['fromId'] = @fromId if @fromId
+      request.params["symbol"] = @symbol
+      request.params["limit"] = @limit if @limit
+      request.params["fromId"] = @fromId if @fromId
     end
   end
 

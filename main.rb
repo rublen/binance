@@ -3,10 +3,11 @@ require 'pp'
 
 # Credential.create(api_key: '', api_secret: '')
 
-item = Credential.last
+item = Credential.first
 client = BinanceClient.new(item)
 pp HistoricalTrades.new(client, 'ETHBTC', 5).response_hash
-pp UserTradeList.new(client, 'ETHBTC', (Time.now.to_f*1000).to_i, limit: 2).raw_response
+p '------------------------------'
+pp UserTradeList.new(client, 'ETHBTC', limit: 2).raw_response
 
 Application.log(:info, "Hello! #{item}")
 
