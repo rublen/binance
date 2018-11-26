@@ -6,13 +6,13 @@ require 'pp'
 item = Credential.first
 client = BinanceClient.new(item)
 # pp HistoricalTrades.new(client, 'ETHBTC', 5).response_hash
-p '------------------------------'
-pp AccauntTradeList.new(client, 'ETHBTC', limit: 2).raw_response
-p '------------------------------'
-pp AccountInformation.new(client, recvWindow: 5000).raw_response
-p '------------------------------'
-pp AllOrders.new(client, 'ETHBTC', limit: 2).raw_response
-
+# p '------------------------------'
+# pp AccauntTradeList.new(client, 'ETHBTC', limit: 2).raw_response
+# p '------------------------------'
+# pp AccountInformation.new(client, recvWindow: 5000).raw_response
+# p '------------------------------'
+# pp AllOrders.new(client, 'ETHBTC', limit: 2).raw_response
+pp ResponseProcessing.new(client).response_hash
 Application.log(:info, "Hello! #{item}")
 
 

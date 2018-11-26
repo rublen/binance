@@ -20,11 +20,4 @@ class AccountInformation
       request.params['signature'] = sha256_code
     end
   end
-
-  def raw_response
-    response = call_to_api
-    response_body = JSON.parse(response.body)
-    Application.log(:error, "401 Unauthorized: #{response_body}") if response.status >= 400
-    response_body
-  end
 end
