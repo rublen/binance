@@ -5,15 +5,16 @@ require 'pp'
 
 item = Credential.first
 client = BinanceClient.new(item)
-# pp HistoricalTrades.new(client, 'ETHBTC', 5).response_hash
-# p '------------------------------'
-# pp AccauntTradeList.new(client, 'ETHBTC', limit: 2).raw_response
-# p '------------------------------'
-# pp AccountInformation.new(client, recvWindow: 5000).raw_response
-# p '------------------------------'
-# pp AllOrders.new(client, 'ETHBTC', limit: 2).raw_response
-pp ResponseProcessing.new(client).response_hash
-Application.log(:info, "Hello! #{item}")
+processor = ResponseProcessing.new(client)
+begin
+  pp processor.response_hash
+  pp processor.raw_response(:account_information, recvWindow: 5000)
+  pp processor.raw_response(:account_trade_list, 'ETHBTC', limit: 2)
+  pp processor.raw_response(:all_orders, 'ETHBTCL', limit: 2)
+rescue Exception => e
+  Application.log(:error, e.message)
+end
+
 
 
 # echo -n "limit=2&symbol=ETHBTC&timestamp=1542972836855" | openssl dgst -sha256 -hmac "api_secret"
