@@ -1,25 +1,21 @@
-require 'json'
+require_relative 'environments/development'
 require 'pp'
-require 'active_record'
-require_relative 'binance'
-require_relative 'models/credential'
 
+# Credential.create(api_key: '', api_secret: '')
 
-def root
-  Pathname.new(File.expand_path('..', __FILE__))
+item = Credential.first
+client = BinanceClient.new(item)
+processor = ResponseProcessing.new(client)
+begin
+  pp processor.response_hash
+  pp processor.raw_response(:account_information, recvWindow: 5000)
+  pp processor.raw_response(:account_trade_list, 'ETHBTC', limit: 2)
+  pp processor.raw_response(:all_orders, 'ETHBTCL', limit: 2)
+rescue Exception => e
+  Application.log(:error, e.message)
 end
 
-def db_configuration
-  db_configuration_file = root.join('db', 'config.yml')
-  YAML.load(File.read(db_configuration_file))
-end
 
-ActiveRecord::Base.establish_connection(db_configuration["development"])
 
-client = Binance.new(Credential.last)
-
-pp arr = JSON.parse(client.hystorical_trades_call('ETHBTC', 5).body)
-a = arr.select { |h| h['id'] = 91857071 }
-pp a
-# pp 'Hystorical Trades:', JSON.parse(client.public_call.body)
-# pp('Hystorical Trades:', JSON.parse(client.public_call('/api/v1/exchangeInfo').body))
+# echo -n "limit=2&symbol=ETHBTC&timestamp=1542972836855" | openssl dgst -sha256 -hmac "api_secret"
+# https://api.binance.com/api/v3/myTrades?limit=2&signature=63793e69f3f5ed44c7e0b6efff430af69501d5b90db34c2125c4f9d3aa55f43c&symbol=ETHBTC&timestamp=1542972836855
