@@ -4,6 +4,7 @@ require 'active_record'
 require 'logger'
 
 
+require 'dotenv'
 class Application
 
   include Singleton

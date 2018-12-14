@@ -17,16 +17,16 @@ class BinanceClient
     @credential.id
   end
 
-  def account_information
-    @api_urls[:account_information]
+  def account_information(params)
+    call(@api_urls[:account_information], params)
   end
 
-  def account_trade_list
-    @api_urls[:account_trade_list]
+  def account_trade_list(params)
+    call(@api_urls[:account_trade_list], params)
   end
 
-  def all_orders
-    @api_urls[:all_orders]
+  def all_orders(params)
+    call(@api_urls[:all_orders], params)
   end
 
   def call(url, query_params = {})
