@@ -14,3 +14,10 @@ end
 RSpec.configure do |c|
   # c.include JsonSpec::Helpers
 end
+
+class Hash
+  def method_missing(method_name)
+    # p "missing method: #{method_name.inspect}"
+    self[method_name] if keys.include? method_name
+  end
+end

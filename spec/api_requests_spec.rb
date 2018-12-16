@@ -1,25 +1,18 @@
 require 'spec_helper'
 
-class Hash
-  def method_missing(method_name)
-    # p "missing method: #{method_name.inspect}"
-    self[method_name] if keys.include? method_name
-  end
-end
-
-
 describe "Binance API requests with VCR-RSpec integration" do
   credential = { id: 1, api_key: ENV["API_KEY"], api_secret: ENV["API_SECRET"] }
   let(:client) { BinanceClient.new(credential) }
 
+  context "Ping call to API", :vcr do
+    let(:ping) { VCR.use_cassette("ping") { client.connection.get '/api/v1/ping' } }
 
-  let(:url) {'/api/v1/ping'}
+    it 'returns status 200' do
+      expect(ping.status).to eq 200
+    end
 
-  context "Public call to api", :vcr do
-    it 'records an http request' do
-      VCR.use_cassette("ping") do
-        expect(JSON.parse(client.call(url).body)).to be_a(Hash)
-      end
+    it 'returns an empty hash' do
+      expect(ping.body).to be_json_eql({}.to_json)
     end
   end
 
@@ -39,9 +32,11 @@ describe "Binance API requests with VCR-RSpec integration" do
     end
   end
 
-
   context "Account trade list" do
-    let(:account_trade_list) { VCR.use_cassette("account_trade_list") { r = client.account_trade_list(symbol: 'ETHBTC', limit: 2) } }
+    # next line uses ready cassette with previously filled response.body
+    let(:account_trade_list) { VCR.use_cassette("account_trade_list", record: :none, match_requests_on: [:method]) { client.account_trade_list(symbol: 'ETHBTC', limit: 2) } }
+    # to record real response uncomment next line. To pass all tests response body shouldn't be empty array (account should have trades))
+    # let(:account_trade_list) { VCR.use_cassette("account_trade_list") { client.account_trade_list(symbol: 'ETHBTC', limit: 2) } }
 
     it 'returns status 200' do
       expect(account_trade_list.status).to eq 200
@@ -51,7 +46,7 @@ describe "Binance API requests with VCR-RSpec integration" do
       expect(JSON.parse(account_trade_list.body)).to be_a Array
     end
 
-    %w(date symbol type price quantity).each do |attr|
+    %w(time symbol isBuyer price qty).each do |attr|
       it "contains #{attr}" do
         expect(account_trade_list.body).to have_json_path("0/#{attr}")
       end

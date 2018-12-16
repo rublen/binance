@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=86d07223581063a123804f3ecea3f41b124f77c22a91f3a5b3ab0c59b8288cc4&symbol=ETHBTC&timestamp=1544948714464
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Sun, 16 Dec 2018 08:25:14 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 465e661d27b2b6a1c349a5550c745b0f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - P_Whd1rFdPz4l08D5_3KiZWQ51Edwq2TklC6E5SedtrvI6hFbm3YTQ==
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"symbol": "BNBBTC", "id": 28457, "orderId": 100234, "price": "4.00000100",
+        "qty": "12.00000000", "commission": "10.10000000", "commissionAsset": "BNB",
+        "time": 1499865549590, "isBuyer": true, "isMaker": false, "isBestMatch": true}]'
+    http_version:
+  recorded_at: Sun, 16 Dec 2018 08:25:15 GMT
+recorded_with: VCR 4.0.0

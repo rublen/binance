@@ -3,6 +3,8 @@ require 'faraday'
 class BinanceClient
   BASE_ENDPOINT = 'https://api.binance.com/'
 
+  attr_reader :connection
+
   def initialize(credential)
     @credential = credential
     @connection = Faraday.new(url: BASE_ENDPOINT)
@@ -38,7 +40,7 @@ class BinanceClient
       request.url url
       request.headers["X-MBX-APIKEY"] = @credential.api_key
       request.params.merge!(params)
-      request.params['signature'] = sha256_code(params)
+      request.params['signature'] = sha256_code(params) if @credential
     end
   end
 
