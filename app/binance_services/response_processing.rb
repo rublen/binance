@@ -7,10 +7,10 @@ class ResponseProcessing
   def raw_response(api_request, args = {})
     response = @client.send(api_request, args)
     response_body = JSON.parse(response.body)
-    raise response_body if response.status >= 400
+    raise BinanceException, response_body if response.status >= 400
     response_body
-  rescue Exception => e
-    Application.log(:error, "From reuquest: #{api_request}, #{response.status}: #{response_body}")
+  rescue BinanceException => e
+    Application.log(:error, "From reuquest: #{api_request}, status #{response.status}: #{response_body}")
     puts "ERROR from reuquest: #{api_request}, status #{response.status}, #{e.message}, message: '#{response_body["msg"]}'"
   end
 
@@ -19,7 +19,7 @@ class ResponseProcessing
     account_info = raw_response(:account_information, recvWindow: args[:recvWindow] || 5000)
     trade_list = raw_response(:account_trade_list, args)
     return unless account_info && trade_list
-    hash = { credential_id: @client.credential_id, trades: [], positions: account_info[:balances] }
+    hash = { credential_id: @client.credential_id, trades: [], balances: account_info[:balances] }
     trade_list.each { |trade| hash[:trades] << trade_info(trade) }
     hash
   end
@@ -41,6 +41,5 @@ class ResponseProcessing
   end
 end
 
-# class Error < StandardError
-#   response.status
-# end
+class BinanceException < StandardError
+end

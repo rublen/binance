@@ -11,5 +11,3 @@ end
 
 
 app.run!
-
-# AppLogger.new(logenv: File.expand_path('log/app.log', __FILE__))

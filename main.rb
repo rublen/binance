@@ -15,6 +15,11 @@ pp processor.response_hash
   for example: processor.response_hash(symbol: 'ETHBTC', limit: 100, recvWindow: 10000)
 =end
 
+
+# make ping-request to check the connection, you should receive empty hash
+# p client.public_call('/api/v1/ping').body
+
+
 # pp processor.raw_response(:account_information, recvWindow: 5000)
 # pp processor.raw_response(:account_trade_list, symbol: 'ETHBTC', limit: 2)
 # pp processor.raw_response(:all_orders, symbol: 'ETHBTC', limit: 2)

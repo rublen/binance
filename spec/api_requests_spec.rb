@@ -5,7 +5,7 @@ describe "Binance API requests with VCR-RSpec integration" do
   let(:client) { BinanceClient.new(credential) }
 
   context "Ping call to API", :vcr do
-    let(:ping) { VCR.use_cassette("ping") { client.connection.get '/api/v1/ping' } }
+    let(:ping) { VCR.use_cassette("ping") { client.public_call '/api/v1/ping' } }
 
     it 'returns status 200' do
       expect(ping.status).to eq 200

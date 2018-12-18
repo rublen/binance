@@ -1,11 +1,13 @@
 Task:
+
 "There is a Binance type crypto-exchange, the user wants to transfer us historical data about his trading activity in read-only mode. We need to collect data through the API and output it to the console.
+
 Requirements:
 - mysql database
-- table credentials (key, secret), create by migration
+- table :credentials (key, secret) created through migration
 - VCR-tests for receiving data from Binance. If the API key is incorrect, write an error to the log.
-- go through all the credentials table. For everyone pull data
-- the result should be a hash
+- go through all the credentials and pull data for each one.
+- the result should be a hash like this:
 {credential_id: 123, trades: [{date: 2018-10-11, type: 'BUY / SELL', price: 34, quantity: 10}], balances: []}"
 
 
