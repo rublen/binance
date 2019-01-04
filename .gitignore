@@ -2,4 +2,3 @@
 spec/cassettes/*
 !spec/cassettes/account_trade_list.yml
 .env
-spec/response_processing_spec.rb

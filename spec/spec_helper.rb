@@ -9,12 +9,14 @@ VCR.configure do |c|
   c.ignore_hosts '127.0.0.1', 'localhost'
   c.hook_into :webmock
   c.default_cassette_options = { record: :new_episodes }
+  c.allow_http_connections_when_no_cassette = true
 end
 
 RSpec.configure do |c|
   # c.include JsonSpec::Helpers
 end
 
+# A bypass of using DB
 class Hash
   def method_missing(method_name)
     # p "missing method: #{method_name.inspect}"

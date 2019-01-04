@@ -63,6 +63,2114 @@ http_interactions:
       string: '[{"symbol": "BNBBTC", "id": 28457, "orderId": 100234, "price": "4.00000100",
         "qty": "12.00000000", "commission": "10.10000000", "commissionAsset": "BNB",
         "time": 1499865549590, "isBuyer": true, "isMaker": false, "isBestMatch": true}]'
-    http_version:
+    http_version: 
   recorded_at: Sun, 16 Dec 2018 08:25:15 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=22d5f16928c1f03222c0620c2904582f05c21fce338a4800638b79e2e9ba2abe&symbol=ETHBTC&timestamp=1546555828797
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 22:50:31 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 e15344e351ae77fef306bf70353d7fc3.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - BLKoXKTiujsySBtMEjgLZt-cv28_UF4aKFtMvrRfFKRC7Cc6o1PwdQ==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 22:50:31 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=0940ca44cf0d8c00e5886b4841c4d9de20f89c899867678f95c1d7810b5e3047&symbol=ETHBTC&timestamp=1546555831985
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 22:50:32 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 9de9a776d0da209cb66ec4bd03877799.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 7mvsqOab8gRPa64L3FmIMG9fJ0kuJEUTo8zvDqMlrWc5KkWirmdygA==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 22:50:32 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=c8df56d7f8aea93df5c786b2123eb01e8ecf5e7d20b199bf5f09293c825952b8&symbol=ETHBTC&timestamp=1546558623410
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:37:04 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 09f4ecc806a7e34780fd19a93b984724.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 3BDiXKd8KgEHjmJdepTq_d2g8cplPX3sOb5F_oVJL-3ASZUsB39Z0w==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:37:04 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=a84d5e652e7a54bfcd7118464fd5674d9c814fe6a27b69402af500dd77cfc46e&symbol=ETHBTC&timestamp=1546558624291
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:37:04 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 bd3e2233bf25337a89461c638cad13b9.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - XYyWJFXtskJa30MCU4Vfs7ZMR-uup4QRfhFMd_RO7B_ZyJ2GyzMiaw==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:37:04 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=843d65894038b3f8652c0fd454a03d1fab5be08b9545e5f58e95675b07410748&symbol=ETHBTC&timestamp=1546558720006
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:38:40 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 1d32f672764a20290d04a16248d04c57.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - IrXbNrVtTWTMfnlvGAyzD11d0_XwCq3jZh_-AiLFA27uNUzn8XqEwA==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:38:40 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=055ea28eec6ae6a6b843ffd2574d0a9904098e1d9aa616787ccf82cc6d4025be&symbol=ETHBTC&timestamp=1546558720923
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:38:41 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 23d92aa442d5ae9ed0313643d8764687.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Mbwn8Za8soec87fV_uIJQhfFJE2vINnvHIOXzz4Ms6NPe-HYk3DSLg==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:38:41 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=9184acd0b9c2c2a9b241a7f885c8ff93dd0031a8c3ee7ad65bf84b7094ec85ba&symbol=ETHBTC&timestamp=1546558826164
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:40:26 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 0316586b8fd7e325258707448d98d7cd.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - uNwdp_PUrrxsZAQRNQJX9ujnb3UeXUUaLShbD4ipdCyvatFfB5LBPQ==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:40:27 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=57988b08a401f34c2c525c81e6a36e9ab80f85e6a15d3b1cfe384b1a1782f831&symbol=ETHBTC&timestamp=1546558827071
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:40:27 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 53e3dfdf8efd0c06e5d27cfdbfbe5876.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - zo1X-3cY9iMc9sZjDt-UqRMvJogIOFU-CALCoYgEd55eHKh_L5nanw==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:40:27 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=e3d4f95804cd2ce342d86e2a364551b0bacb08492c5cca165085d7814db5dcc6&symbol=ETHBTC&timestamp=1546558844771
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:40:45 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 f51b809c33f0bb5b1d5504f4df0c0a3f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 2NDmA3AMWXafkx1rlg5BJDKc5zItWVGJEGlDfmVt7-PiJlGc3QzMWw==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:40:45 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=2cac3aae22d801a378b71a2da29d686b616948f991301d3ce0c21c107aa571c3&symbol=ETHBTC&timestamp=1546558845467
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:40:45 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 bd785324d865b594e6f1838b58cb0dae.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 1r3bs-CPjTJzjXKnSyeBBxXKl88agbwRZZFz7tMGz8ddECpACsKx_Q==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:40:45 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=d347588e292eddd91394e57c03e9d76dd332ad789ec4c234a57c431db83464e6&symbol=ETHBTC&timestamp=1546559131585
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:45:31 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 23d92aa442d5ae9ed0313643d8764687.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - EpJfD3m3fim_4ht-5Pr0JIJWH4qhzeHCbjDPF7kKAfCPsHrBGHClFw==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:45:32 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=b82eabfa8bb23e0e3c5306af86ba01835701530017ced6c4ea1a3b878834a732&symbol=ETHBTC&timestamp=1546559132084
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:45:32 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 821f1951140ddf83c7de719a44727403.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - I1MRMhrxS4SdhdtxE89XU6EaFw0t9pS1JWp-EPpLqt8F-FTwwHVRTg==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:45:32 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=2ed5cb194fe0de9beb8f6eb4513e20ab03e607d45f884e972da6580baf9c08a4&symbol=ETHBTC&timestamp=1546559276245
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:47:58 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 e72ed739d85b0c5633dfd1f214a1adca.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Ia3UiYJDNKvfHen2nkGJvkqFeSmFJMC6COx40nhMn7qbfnBs3wMF9Q==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:47:58 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=c37d2d4760adbe07ab3ef9e826c9d1f0cc1cb7e23131e89821b4bd13fc2f56fd&symbol=ETHBTC&timestamp=1546559278720
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:47:59 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 c14a347f6edf184d204306cb833d0732.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - J91DixC-qufPeIdkiTab4LBMmhk1wVHe2wfsn7kHZMmpp6vm88-bQQ==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:47:59 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=9d5787f9a5967caee1c21c55021d1330f005d7cd4506bed9eb655204dcb19a39&symbol=ETHBTC&timestamp=1546559361070
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:49:21 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 2db316290386960b489a2a16c0a63643.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - rxcKWY_p51qsrP1QIICJ7m0i7Tv8c46GHXs8qrt8oZ2nF2MCwmNS5A==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:49:21 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=c6396c01219a9f9e9ce138f16bc5e0d7671ddac771d6278a16f793ec306ddbc9&symbol=ETHBTC&timestamp=1546559361736
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:49:22 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 616f617776e843142ab5d87231cb3526.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - l6bFlScRku8eGHzue3SP_lId9k_5RKsYv98vPLnwsTvxYBpjwONzMg==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:49:22 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=5c1a3b9d01ade0023fa0b3cefd488080728ea35608d4bcc145afb9ae00b5716d&symbol=ETHBTC&timestamp=1546559411639
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:50:12 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 0f820adb6671fcc6033a9aa95ec8e0fb.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - fSpIKP-nTDt7Oq6jYa4iACrJU3W3Ku6rr2yJpz7c8J8JQgXe6k7zsg==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:50:12 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=1c835776bac6667ce6955132dd0a80c7bbaa8abd0419d9dc8b005fc4d2ace139&symbol=ETHBTC&timestamp=1546559412445
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:50:12 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 fabe381dacc990f9c402cdc69b69dd26.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - MULuVdWte1dmVW2zFr6EwZrEzn5lhh0HUmy5oXfdjMtNWewejg3InA==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:50:12 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=7d0b0277074c499824e56e57204f5f17602ffed069b28fb52b44375c64c61011&symbol=ETHBTC&timestamp=1546559437849
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:50:38 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 c55f09a9188f77960d35c97bad15e1b2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - s7SvA-F-FbFqWp_hhbTAOPMMq1Yc2WE4HXY28QnXuYvFtQVknDKxQg==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:50:38 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=a3ba33edb8c2ed696f4f952c49ebaacc2f37766cfb85440854b970c4babb8510&symbol=ETHBTC&timestamp=1546559438941
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:50:39 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ea71ce4ac4724c3ed76f4816ddddaa6c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - uA8Jd2uUlXchAySX5wahxbknGw3sX8iIQ3_lHeKOGoAKFiOpC02b4w==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:50:39 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=0363aedb2ca3d7b0963db7be36a73ea07cd9cf5d680a5e9f3d0da74af23e0087&symbol=ETHBTC&timestamp=1546559526902
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:52:07 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 e7c35757c4581d46396ae4c0a48815ef.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - yYCU9sE4e8VIWaoUwL7VmAAqW8TQP_tJ7y_cWYl7CgdZm8aQtx1xew==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:52:07 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=a9ec17475af9aa7bd235ace47480f3986d95958f6d6102619335d4bb228c25a1&symbol=ETHBTC&timestamp=1546559527493
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:52:08 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 9de9a776d0da209cb66ec4bd03877799.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 1rYIGotNExqKlhuapa0bQI-Kqsp-3swAiRQMLCjurkGSNnk44yZYAQ==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:52:08 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=fb97cdd050f7c8f822785364b81d82191c0056d1fddb5aeffe33bd999ca437c9&symbol=ETHBTC&timestamp=1546559562009
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:52:42 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 268be5c908db8ae22ed9c5c6cfffc109.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - JwVgzhEcSv2kIbu8fRDAvr6QoT6g9aqOKtvV1gpDX9ky8OXEhy3KOw==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:52:42 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=f07368c7fecaad090749c879b05b94d4cfab5e30831ebd4717a2274e95200bb7&symbol=ETHBTC&timestamp=1546559562716
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:52:43 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 fabe381dacc990f9c402cdc69b69dd26.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - vAcQMzAfaRd3a4VaXMrQT3iBqm7n_c0iNQpnuHSYF4akHYTufqsTZA==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:52:43 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=1f1f8ff902a5ca40754d9fa52407bd2e0f65bf39e4b46b6c154970b1b61d3a45&symbol=ETHBTC&timestamp=1546559782191
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:56:23 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 f2cdeae9faa9c871a27c20811b04af58.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - eRwlg5RA5vL3Zr9DCRtdyL15vEOfDnc_rqqWyPtKR8bkIvJCLgyRTg==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:56:23 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=2dcf1bbe1b6f25f182816cb06a87f2c38b7fd74f5abc58faa454199c949b3d23&symbol=ETHBTC&timestamp=1546559783893
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:56:24 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 6e761598d9637d0090f3661d0d27be14.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - DN_alshd5LNO3fnsMuK_1Rc2vILRyAOOI_5bbVdvKQJ2P7M3T_CEVg==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:56:24 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=7ab0580cce6c60ee43005c9135879a8de94a89d32829e896cae0221715540804&symbol=ETHBTC&timestamp=1546559826476
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:57:07 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 7c2d73d3cd46e357090188fa2946f746.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - ixMwQzhyVz0OLGXIejcrHNPsl1hdsESBEb6rXjwKaDomrEkOVzkZaA==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:57:07 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=d389f6a04d1c2a8f39805e9f694d58158459e7ba4a4e5d12318c64daf6a9bf77&symbol=ETHBTC&timestamp=1546559827409
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:57:07 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f2cdeae9faa9c871a27c20811b04af58.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 4Cb0QwtLeUXof95-WPiZ-rlWCIAFK_wtKtDzle8v1DL-qZqqF9b4pg==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:57:07 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=c8a5ea37c06a7cb77286ebd2cba75a40a413e4a02131aa4afffc12a6fd3ff844&symbol=ETHBTC&timestamp=1546559876050
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:57:57 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 1280e48937eca7de58e32cd35415f48a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - T4YjvL0dEqk11rahvPiFszAaGz2an-WTPQt7Jhogf9oG_dDyWcuOXg==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:57:57 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=beacd49ba32e99286bc83a8eead3b753b9018ad64b5bb05b58df8a258a1cb1ee&symbol=ETHBTC&timestamp=1546559877621
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:57:57 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 7419ebe6dc61a036c7f081375facfd52.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - UO0VMPauvGlPUJ-6ODQP8bYsZCXFnCzxgnHgEyvjOPgNFlyzclgEZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:57:58 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=718fdf6a36e4dc14ccd0e6ba3baa432b787545ebb1f5be429750602585e951ee&symbol=ETHBTC&timestamp=1546559981771
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:59:42 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 09f4ecc806a7e34780fd19a93b984724.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - RWKvMbsd8f53yAH8Tl_UcdKMb3OSSm_Q504h3TZf6vhCCI4YptM-Ug==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:59:42 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=d4633fda9c9cbb4b9a48b5e438e10c029519488b2dbbe3fa1bd6874c48768e3f&symbol=ETHBTC&timestamp=1546559982330
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 03 Jan 2019 23:59:42 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 d76fac2b5a2f460a1cbffb76189f59ef.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - X6CzFnSEE6dOJcmpq70HBcV-_d8s_WAxlqSOlsvHMIFZSrFTwzP2PA==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Thu, 03 Jan 2019 23:59:42 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=ad2993388a7208e4d65de0bd9d78eca28d0eddca939da36ad25c1f28bf12e96d&symbol=ETHBTC&timestamp=1546560012781
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - '1234'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 04 Jan 2019 00:00:13 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 ea71ce4ac4724c3ed76f4816ddddaa6c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - vWmzdvhAkAicS5NIzMZ9IdesB_x-Y3c6Q3w-NJxRXlRtkAhMwyBCVw==
+    body:
+      encoding: UTF-8
+      string: '{"code":-2014,"msg":"API-key format invalid."}'
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 00:00:13 GMT
+- request:
+    method: get
+    uri: https://api.binance.com/api/v3/myTrades?limit=2&signature=56673019d1435b37dff97a9e49d4591212d682a5e4052e9a0a3118ef06ad107b&symbol=ETHBTC&timestamp=1546560013630
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      X-Mbx-Apikey:
+      - RTvmWlTPk0C4XNaGKXI9qXRBNBvGjbhNHzbWsqX7NoODQak1Xu0VZTTlh4qHTnTS
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 04 Jan 2019 00:00:13 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Webkit-Csp:
+      - default-src 'self'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 5954578e851092964f39f2f5f0596950.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - W2IYqb4Z67PLElYxQ3YlfXx4FLKasTrmEx940z4FY_LYl9ZTE0fK9A==
+    body:
+      encoding: ASCII-8BIT
+      string: "[]"
+    http_version: 
+  recorded_at: Fri, 04 Jan 2019 00:00:14 GMT
 recorded_with: VCR 4.0.0
