@@ -1,5 +1,5 @@
-### Binance API use
-- a test task for one company, that I failed at first
+### Binance API
+- a test task 
 
 __Task:__
 
@@ -21,7 +21,7 @@ _ruby main.rb_ - runs the programme, it has some explanations and some commented
 
 __Testing__
 
-_rspec spec/api_requests_spec.rb_ - runs the specs which test how api works:
+_rspec spec/api_requests_spec.rb_ - runs the specs that test how requests for Binance api works:
 - ping call (public) just for checking connection with Binance API (there is no need API key and secret or any params)
 - three account endpoints (require some kind of params and signature) - included general tests on status 200 and class of returned object and tests for fields that are needed for response_hash
 
