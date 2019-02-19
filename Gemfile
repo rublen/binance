@@ -9,4 +9,6 @@ group :test do
   gem 'rspec'
   gem 'vcr'
   gem 'webmock'
+  gem 'json_spec'
+  gem 'dotenv'
 end

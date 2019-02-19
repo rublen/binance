@@ -3,7 +3,6 @@ require 'singleton'
 require 'active_record'
 require 'logger'
 
-
 class Application
 
   include Singleton

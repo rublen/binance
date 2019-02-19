@@ -3,6 +3,8 @@ require 'faraday'
 class BinanceClient
   BASE_ENDPOINT = 'https://api.binance.com/'
 
+  attr_reader :connection
+
   def initialize(credential)
     @credential = credential
     @connection = Faraday.new(url: BASE_ENDPOINT)
@@ -17,19 +19,19 @@ class BinanceClient
     @credential.id
   end
 
-  def account_information
-    @api_urls[:account_information]
+  def account_information(params)
+    account_call(@api_urls[:account_information], params)
   end
 
-  def account_trade_list
-    @api_urls[:account_trade_list]
+  def account_trade_list(params)
+    account_call(@api_urls[:account_trade_list], params)
   end
 
-  def all_orders
-    @api_urls[:all_orders]
+  def all_orders(params)
+    account_call(@api_urls[:all_orders], params)
   end
 
-  def call(url, query_params = {})
+  def account_call(url, query_params = {})
   # account_information: mandatory parameters - :timestamp; optional parameters - :recvWindow
   # account_trade_list: mandatory - :symbol, :timestamp; optional - :start_time, :end_time, :limit, :fromId, :recvWindow
   # all_orders: mandatory - :symbol, :timestamp; optional - :start_time, :end_time, :limit, :orderId, :recvWindow
@@ -38,8 +40,12 @@ class BinanceClient
       request.url url
       request.headers["X-MBX-APIKEY"] = @credential.api_key
       request.params.merge!(params)
-      request.params['signature'] = sha256_code(params)
+      request.params['signature'] = sha256_code(params) if @credential
     end
+  end
+
+  def public_call(url)
+    connection.get(url)
   end
 
 
